@@ -1,5 +1,5 @@
 body {
-    background-image: url('coming\ soon\ \(2\).gif');
+    background-color: black;
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
@@ -36,10 +36,18 @@ body {
 
 .github-link {
     margin-top: 80px; /* Ajusta a margem superior para posicionar o link do GitHub */
+    text-align: center; /* Centraliza o link do GitHub */
+}
+
+.github-link a {
+    color: black; /* Define a cor do texto como preto */
+    background-color: black; /* Define a cor de fundo como preto */
+    border: none; /* Remove a borda */
+    text-decoration: none; /* Remove a sublinha */
 }
 
 .container {
-    padding-top: 30px; /* Ajuste para garantir que o conteúdo principal não sobreponha o menu e o link do GitHub */
+    padding-top: 100px; /* Ajuste para garantir que o conteúdo principal não sobreponha o menu e o link do GitHub */
     text-align: center;
     animation: fadeIn 2s ease-in-out;
 }
@@ -51,4 +59,18 @@ body {
     to {
         opacity: 1;
     }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px); /* Ajusta a altura para centralizar verticalmente */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #ffc107;
+    border-radius: 10px;
 }
